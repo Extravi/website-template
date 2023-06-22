@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Lato:wght@100;400&family=Nunito+Sans:wght@300;400&display=swap');
+
+body {
+    margin: 0;
+}
+
+html {
+    background-color: #121212;
+    font-family: "Nunito Sans", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    color-scheme: dark;
+}
+
+.wrapper {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: rgba(21, 21, 21, .7);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+}
+
+.navbar {
+    position: center;
+    color: #dae5ec;
+    padding: 0 20px;
+    height: 50px;
+}
+
+.logo {
+    line-height: 50px;
+    float: left;
+}
+
+.logo a {
+    color: #dae5ec;
+    text-decoration: none;
+    font-family: 'Caveat', cursive;
+    font-size: 27px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.menu {
+    float: right;
+    line-height: 50px;
+}
+
+.menu a {
+    color: #dae5ec;
+    transition: all 0.3s ease;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+a:hover {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.bg-image {
+    position: relative;
+    margin: 54px auto;
+    width: 100%;
+    height: calc(47vh + 5px);
+    overflow: hidden;
+    margin-bottom: 0px;
+}
+
+.bg-image::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    background: url("/images/daniel-koponyas-rbiLY6ZwvXQ-unsplash.webp") no-repeat center;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+}
+
+.overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.section {
+    z-index: 2;
+    background-color: #121212;
+    padding: 3.5rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.section h3 {
+    font-size: 2rem;
+    font-weight: 300;
+    margin: 0 0 1rem;
+    color: #dae5ec;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 25px;
+    padding-right: 25x;
+}
+
+.section p {
+    font-size: 1.2rem;
+    font-weight: 300;
+    max-width: 700px;
+    margin: 0 0 1rem;
+    color: #dae5ec;
+    font-family: 'Nunito Sans', sans-serif;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.section {
+    z-index: 2;
+    background-color: #121212;
+    padding: 1.7rem 0;
+    display: flex;
+    align-items: center;
+}
+
+#section-2 {
+    background-color: #151515;
+}
+
+.section-img {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+.overlay h1 {
+    font-size: 3rem;
+    color: #dae5ec;
+    font-family: 'Nunito Sans', sans-serif;
+    margin: 0 0 1rem;
+}
+
+.overlay h2 {
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin: 0 0 1rem;
+    color: #dae5ec;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+.divider {
+    padding: 20px;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.icon-text-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-text-container h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 16px;
+    text-decoration: none;
+    background: rgba(21, 21, 21, .7);
+    -webkit-backdrop-filter: blur(20px);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .2);
+    color: #dae5ec;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    color: lightgrey;
+    text-decoration: none;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.btn:active {
+    color: lightgrey;
+    text-decoration: none;
+}
+
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    margin: 0 5px;
+}
+
+#section-3 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #121212;
+}
+
+#section-1 {
+    background-color: #151515;
+}
+
+#footer {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 0px;
+    font-size: 0.8rem;
+    color: #999da2;
+    padding: 1.7rem 0;
+}
+
+#footer p {
+    font-size: 0.8rem;
+    color: #999da2;
+}
+
+#footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+#footer ul li a {
+    display: block;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.9rem;
+    text-decoration: none;
+    color: #999da2;
+}
+
+#footer ul li {
+    display: inline-block;
+}
+
+#section-4 {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    background-color: #151515;
+}
+
+#image-bg {
+    margin: 10px;
+}
+
+#section-content-1 {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: -1.7rem;
+    max-width: 880px;
+}
+
+/* set images 0 starting at the top of the web page and 8 ending at the bottom of the web page */
+
+.img-0 {
+    background-image: url("/images/marek-piwnicki-XzZ0qzvQcnw-unsplash.jpg");
+}
+
+.img-1 {
+    background-image: url("/images/marek-piwnicki-XzZ0qzvQcnw-unsplash.jpg");
+}
+
+.img-2 {
+    background-image: url("/images/marek-piwnicki-XzZ0qzvQcnw-unsplash.jpg");
+}
+
+.img-3 {
+    background-image: url("/images/marek-piwnicki-XzZ0qzvQcnw-unsplash.jpg");
+}
+
+.img-4 {
+    background-image: url("/images/marek-piwnicki-XzZ0qzvQcnw-unsplash.jpg");
+}
+
+.img-5 {
+    background-image: url("/images/marek-piwnicki-XzZ0qzvQcnw-unsplash.jpg");
+}
+
+.img-6 {
+    background-image: url("/images/marek-piwnicki-XzZ0qzvQcnw-unsplash.jpg");
+}
+
+.img-7 {
+    background-image: url("/images/marek-piwnicki-XzZ0qzvQcnw-unsplash.jpg");
+}
+
+.img-8 {
+    background-image: url("/images/marek-piwnicki-XzZ0qzvQcnw-unsplash.jpg");
+}
+
+/* mobile view */
+
+@media only screen and (max-width: 750px) {
+    .overlay h2 {
+        font-size: 1.2rem;
+    }
+
+    .overlay h1 {
+        font-size: 2.4rem;
+    }
+
+    .menu a {
+        font-size: 14px;
+        padding: 0 5px;
+    }
+
+    .menu {
+        float: none;
+        padding-left: 60px;
+    }
+
+    .navbar {
+        padding: 0 10px;
+    }
+
+    .logo a {
+        font-size: 24px;
+    }
+
+    .divider {
+        padding: 5px;
+    }
+
+    .h2-width {
+        max-width: 340px;
+    }
+
+    .btn {
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+
+    .section p {
+        font-size: 1rem;
+    }
+
+    .section h3 {
+        font-size: 1.4rem;
+    }
+
+    .section {
+        padding: 1.4rem 0;
+    }
+
+    .section-img {
+        width: 160px;
+        height: 160px;
+        border-radius: 10px;
+    }
+
+    iframe {
+        max-width: 320px;
+        max-height: 180px;
+    }
+
+    #section-content-1 {
+        padding-left: 7px
+    }
+
+    .img-0 {
+        display: none;
+    }
+}
